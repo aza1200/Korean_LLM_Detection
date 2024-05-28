@@ -3,7 +3,7 @@ from openai import OpenAI
 import time
 import re
 # API 클라이언트 설정
-client = OpenAI(api_key={YOUR API KEY})
+client = OpenAI(api_key="YOUR API KEY")
 
 file_paths = [
     "essay.csv",  # 파일 경로 예시
