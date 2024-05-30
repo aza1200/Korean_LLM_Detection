@@ -1,28 +1,26 @@
-# Project Overview: AI Text Detection Model
+# Project Overview: 한국어 LLM Text Generation 유사 탐지 모델 개발
+
 
 ## Introduction
 
-This project focuses on developing a robust AI model to differentiate between human-generated and AI-generated text. Leveraging datasets translated from English to Korean and various machine learning approaches, our goal is to achieve a performance score of 0.90 or higher in terms of ROC-AUC and F1 score metrics.
+한국어에 대해서 LLM 으로 부터 generated 되었는지, Human generated 
+되었는지 탐지하는 모델을 개발
+![image](./images/overview.png)
 
 ## Motivation
 
-- **Dataset Availability:** There is a critical need for diverse datasets to train more effective models; this project contributes by enhancing dataset availability in Korean.
-- **Technological Advancement:** Improving detection models can help in identifying AI-generated text, crucial for maintaining the integrity of information on the internet.
+- **한국어 LLM 탐지 연구기여** 
+- **한국어 데이터셋 생성기여** 
 
 ## Models and Methods
 
-We experimented with various models and methods across three primary categories:
-
 ### 1. Supervised Learning
 - **Models Used:**
-  - [Ghost Buster](https://arxiv.org/abs/2305.15047)
-  - Mistral 7B with Lora Fine Tuning
-- **Algorithms:**
+  - [Mistral 7B-ko](https://huggingface.co/maywell/Mistral-ko-7B-v0.1) with Lora Fine Tuning
+- **[Ghost Buster](https://arxiv.org/abs/2305.15047):**
   - LightGBM (0.45)
   - Multinomial Naive Bayes (0.45)
   - SGD Classifier (0.1)
-- **Hardware:**
-  - Nvidia A100 for training
 
 ### 2. Unsupervised Learning
 - **Weak Labeling Approach:**
@@ -43,6 +41,10 @@ The project utilizes a [Google translator API](https://cloud.google.com/translat
 
 We made ourselves by collecting..
 - [university entrance exams](https://www.kaggle.com/datasets/umgeeyo/korean-essay) in Korea, specifically in the humanities and social sciences
+
+    - Human Generated :  인문논술 모범답안
+    - LLM Generated   :  GPT Generated
+    
 
 ## Results
 
