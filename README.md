@@ -1,4 +1,4 @@
-# Project Overview: 한국어 LLM Text Generation 유사 탐지 모델 개발
+# 한국어 LLM Text Generation 유사 탐지 모델 개발
 
 
 ## Introduction
@@ -9,8 +9,8 @@
 
 ## Motivation
 
-- **한국어 LLM 탐지 연구기여** 
-- **한국어 데이터셋 생성기여** 
+- 한국어 LLM 탐지 연구기여 
+- 한국어 데이터셋 생성기여
 
 ## Models and Methods
 
