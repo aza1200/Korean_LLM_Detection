@@ -39,9 +39,10 @@ The project utilizes a [Google translator API](https://cloud.google.com/translat
 - **Source:** English dataset
 - **Target:** Translated Korean dataset
 
-### Inference Dataset
+## Inference Dataset
 
-[university entrance exams in Korea, specifically in the humanities and social sciences](https://www.kaggle.com/datasets/umgeeyo/korean-essay)
+We made ourselves by collecting..
+- [university entrance exams](https://www.kaggle.com/datasets/umgeeyo/korean-essay) in Korea, specifically in the humanities and social sciences
 
 ## Results
 
