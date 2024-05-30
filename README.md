@@ -15,7 +15,7 @@ We experimented with various models and methods across three primary categories:
 
 ### 1. Supervised Learning
 - **Models Used:**
-  - Ghost Buster
+  - [Ghost Buster](https://arxiv.org/abs/2305.15047)
   - Mistral 7B with Lora Fine Tuning
 - **Algorithms:**
   - LightGBM (0.45)
@@ -33,15 +33,15 @@ We experimented with various models and methods across three primary categories:
   - GPT 3.5, GPT 4, GPT 4o
   - Google Gemini 1.0 Pro
 
-## Dataset
+## Train Dataset
 
-The project utilizes a translator API to create a bilingual dataset:
+The project utilizes a [Google translator API](https://cloud.google.com/translate/docs/reference/rest) to create a bilingual dataset: [DAIGT DataSet](https://www.kaggle.com/datasets/thedrcat/daigt-v2-train-dataset)
 - **Source:** English dataset
 - **Target:** Translated Korean dataset
 
 ### Inference Dataset
 
-Inference is performed on a subset of the data to evaluate the model's effectiveness in real-time classification between human and AI-generated texts.
+[university entrance exams in Korea, specifically in the humanities and social sciences](https://www.kaggle.com/datasets/umgeeyo/korean-essay)
 
 ## Results
 
